@@ -26,8 +26,7 @@ dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use(cors({ 
-  origin: [process.env.FRONT_END_URL],
-  methods:["GET","POST","PUT","DELETE"],
+  origin: ["URL ALLOWED",process.env.FRONT_END_URL],
   credentials: true 
 }));
 app.use(cookieParser());
